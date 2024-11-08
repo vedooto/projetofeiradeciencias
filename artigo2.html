@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Evasão Escolar nas Escolas Públicas e Particulares no Brasil</title>
-    <!-- Fonte Codec Pro ExtraBold -->
     <link href="https://fonts.googleapis.com/css2?family=Codec+Pro:wght@800&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
@@ -16,22 +15,19 @@
             color: #333;
             font-size: 18px;
         }
-
         header {
-            background-color: #6a0dad; /* Roxo */
+            background-color: #6a0dad;
             color: white;
             text-align: center;
             padding: 20px 0;
             font-size: 24px;
         }
-
         nav {
             text-align: center;
             padding: 10px;
-            background-color: #7b1fa2; /* Roxo mais escuro */
+            background-color: #7b1fa2;
             font-size: 20px;
         }
-
         nav a {
             color: white;
             margin: 0 15px;
@@ -39,25 +35,20 @@
             font-weight: bold;
             cursor: pointer;
         }
-
         nav a:hover {
             text-decoration: underline;
         }
-
         section {
             padding: 20px;
             margin: 0 auto;
             max-width: 90%;
         }
-
-        h2, h3 {
+        h2 {
             color: #6a0dad;
-            margin-top: 0;
             font-family: 'Codec Pro', sans-serif;
             font-weight: 800;
             font-size: 28px;
         }
-
         .card {
             background-color: white;
             border-radius: 10px;
@@ -65,18 +56,15 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             margin-bottom: 20px;
         }
-
         p, ul, li {
             font-size: 20px;
             line-height: 1.6;
         }
-
         canvas {
             max-width: 100%;
             height: auto;
             margin-top: 20px;
         }
-
         footer {
             background-color: #6a0dad;
             color: white;
@@ -87,7 +75,6 @@
             bottom: 0;
             width: 100%;
         }
-
         .floating-menu {
             position: fixed;
             top: 100px;
@@ -99,7 +86,6 @@
             padding: 15px;
             z-index: 1000;
         }
-
         .floating-menu a {
             display: block;
             color: #6a0dad;
@@ -107,7 +93,6 @@
             text-decoration: none;
             font-weight: bold;
         }
-
         .floating-menu a:hover {
             text-decoration: underline;
         }
@@ -126,27 +111,27 @@
         <a href="#motivos">Motivos da Evasão Escolar</a>
         <a href="#impacto">Impacto da Evasão Escolar</a>
         <a href="#conclusao">Conclusão</a>
-        <a href="artigo1.html">Ir para Artigo 1</a> <!-- Link para Artigo 1 -->
+        <a href="artigo1.html">Ir para Artigo 1</a>
     </nav>
 
     <section id="introducao">
         <div class="card">
             <h2>Introdução</h2>
-            <p>A evasão escolar é um problema significativo no Brasil, afetando tanto escolas públicas quanto particulares. Segundo dados do Instituto Brasileiro de Geografia e Estatística (IBGE), a evasão escolar é uma questão complexa que está enraizada em múltiplos fatores, incluindo condições socioeconômicas, qualidade do ensino e questões emocionais dos alunos. Este artigo busca analisar essas questões e oferecer uma visão abrangente dos fatores que contribuem para a evasão escolar no país.</p>
+            <p>A evasão escolar é um problema significativo no Brasil, afetando tanto escolas públicas quanto particulares. Segundo dados do IBGE, a evasão escolar é uma questão complexa, enraizada em fatores como condições socioeconômicas, qualidade do ensino e questões emocionais dos alunos.</p>
         </div>
     </section>
 
     <section id="metodologia">
         <div class="card">
             <h2>Metodologia</h2>
-            <p>Os dados utilizados neste artigo foram obtidos de relatórios do IBGE, como a Pesquisa Nacional por Amostra de Domicílios (PNAD) e o Censo Escolar do Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira (Inep). A análise foi feita de forma comparativa, considerando fatores socioeconômicos, regionais e institucionais. Também foram realizados estudos de caso em diversas regiões do Brasil para compreender melhor as dinâmicas locais que influenciam a evasão escolar.</p>
+            <p>Os dados deste artigo foram obtidos de relatórios do IBGE e do Inep, com análise comparativa considerando fatores socioeconômicos, regionais e institucionais.</p>
         </div>
     </section>
 
     <section id="dados">
         <div class="card">
             <h2>Evasão Escolar: Dados e Tendências</h2>
-            <p>De acordo com o IBGE, a evasão escolar no Brasil aumentou significativamente durante a pandemia de COVID-19, com um aumento de 171% no número de crianças e adolescentes fora da escola. Em 2021, cerca de 244 mil crianças de 6 a 14 anos não estavam matriculadas em escolas. Escolas públicas são mais afetadas pela evasão, apresentando um risco de evasão de até 31% para os alunos. As regiões Norte e Nordeste do Brasil apresentam as maiores taxas de evasão, refletindo desigualdades econômicas e sociais que impactam diretamente o acesso à educação.</p>
+            <p>A evasão escolar no Brasil aumentou durante a pandemia, com um aumento de 171% no número de crianças e adolescentes fora da escola. Em 2021, cerca de 244 mil crianças de 6 a 14 anos não estavam matriculadas em escolas. Escolas públicas apresentam maior risco de evasão.</p>
             <canvas id="evasaoChart" class="responsive-chart"></canvas>
         </div>
     </section>
@@ -155,11 +140,10 @@
         <div class="card">
             <h2>Motivos da Evasão Escolar</h2>
             <ul>
-                <li><strong>Condições Socioeconômicas:</strong> Famílias de baixa renda frequentemente enfrentam dificuldades financeiras que impedem a continuidade dos estudos dos filhos. A necessidade de trabalhar para ajudar no sustento familiar é um fator que contribui significativamente para a evasão.</li>
-                <li><strong>Qualidade da Educação:</strong> A falta de infraestrutura adequada, professores qualificados e materiais didáticos nas escolas públicas contribui para a evasão. Alunos que não se sentem desafiados ou engajados com o conteúdo tendem a desistir.</li>
-                <li><strong>Distúrbios Emocionais e Psicológicos:</strong> Problemas como ansiedade, depressão e bullying podem levar estudantes a abandonarem a escola. O suporte emocional e psicológico é muitas vezes insuficiente nas instituições de ensino.</li>
-                <li><strong>Fatores Regionais:</strong> Áreas rurais e periféricas têm taxas de evasão mais altas devido à falta de acesso a escolas e recursos educacionais. A distância até as instituições de ensino e o transporte inadequado são barreiras significativas.</li>
-                <li><strong>Pandemia de COVID-19:</strong> A transição para o ensino remoto durante a pandemia aumentou a evasão, especialmente entre estudantes que não tinham acesso a tecnologia adequada. A dificuldade de adaptação ao novo formato de ensino foi um desafio para muitos alunos.</li>
+                <li><strong>Condições Socioeconômicas:</strong> Dificuldades financeiras afetam a continuidade dos estudos.</li>
+                <li><strong>Qualidade da Educação:</strong> Falta de infraestrutura e materiais adequados.</li>
+                <li><strong>Distúrbios Emocionais e Psicológicos:</strong> Problemas emocionais podem levar ao abandono escolar.</li>
+                <li><strong>Pandemia de COVID-19:</strong> Ensino remoto aumentou as dificuldades para muitos alunos.</li>
             </ul>
         </div>
     </section>
@@ -167,14 +151,14 @@
     <section id="impacto">
         <div class="card">
             <h2>Impacto da Evasão Escolar</h2>
-            <p>A evasão escolar tem impactos negativos profundos, tanto para os indivíduos quanto para a sociedade. Estudantes que abandonam a escola têm maiores chances de enfrentar dificuldades econômicas, menor acesso a oportunidades de emprego e maior vulnerabilidade a problemas sociais, como criminalidade e violência. Além disso, a evasão escolar perpetua ciclos de pobreza e desigualdade, impactando o desenvolvimento social e econômico do país como um todo.</p>
+            <p>A evasão escolar impacta negativamente tanto o indivíduo quanto a sociedade, dificultando o acesso a oportunidades de emprego e perpetuando ciclos de pobreza.</p>
         </div>
     </section>
 
     <section id="conclusao">
         <div class="card">
             <h2>Conclusão</h2>
-            <p>A evasão escolar é um desafio complexo que requer uma abordagem multifacetada para ser efetivamente combatida. Políticas públicas que abordem as causas socioeconômicas, melhorem a qualidade da educação e ofereçam suporte emocional aos estudantes são essenciais para reduzir a evasão e promover um sistema educacional mais inclusivo e eficaz. Medidas como a formação contínua de professores, investimentos em infraestrutura escolar e programas de assistência social são fundamentais para garantir que todos os alunos tenham a oportunidade de concluir seus estudos e alcançar seu potencial.</p>
+            <p>Políticas públicas que abordem as causas da evasão escolar e promovam suporte emocional e infraestrutura de qualidade são essenciais para reduzir esse problema.</p>
         </div>
     </section>
 
@@ -190,11 +174,10 @@
         <a href="#motivos">Motivos</a>
         <a href="#impacto">Impacto</a>
         <a href="#conclusao">Conclusão</a>
-        <a href="artigo1.html">Ir para Artigo 1</a> <!-- Link para Artigo 1 -->
+        <a href="artigo1.html">Ir para Artigo 1</a>
     </div>
 
     <script>
-        // Gráfico na seção de Evasão Escolar usando Chart.js
         const ctx = document.getElementById('evasaoChart').getContext('2d');
         const evasaoChart = new Chart(ctx, {
             type: 'bar',
@@ -202,15 +185,9 @@
                 labels: ['Antes da Pandemia', 'Durante a Pandemia'],
                 datasets: [{
                     label: 'Evasão Escolar (%)',
-                    data: [10, 31], // Exemplo de dados
-                    backgroundColor: [
-                        'rgba(106, 13, 173, 0.6)',
-                        'rgba(156, 39, 176, 0.6)',
-                    ],
-                    borderColor: [
-                        'rgba(106, 13, 173, 1)',
-                        'rgba(156, 39, 176, 1)',
-                    ],
+                    data: [10, 31],
+                    backgroundColor: ['rgba(106, 13, 173, 0.6)', 'rgba(156, 39, 176, 0.6)'],
+                    borderColor: ['rgba(106, 13, 173, 1)', 'rgba(156, 39, 176, 1)'],
                     borderWidth: 1
                 }]
             },
@@ -232,267 +209,6 @@
                 }
             }
         });
-    </script>
-
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Evasão Escolar nas Escolas Públicas e Particulares no Brasil</title>
-    <!-- Fonte Codec Pro ExtraBold -->
-    <link href="https://fonts.googleapis.com/css2?family=Codec+Pro:wght@800&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <style>
-        body {
-            font-family: 'Codec Pro', sans-serif;
-            background-color: #f4f4f9;
-            margin: 0;
-            padding: 0;
-            color: #333;
-            font-size: 18px;
-        }
-
-        header {
-            background-color: #6a0dad; /* Roxo */
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-            font-size: 24px;
-        }
-
-        nav {
-            text-align: center;
-            padding: 10px;
-            background-color: #7b1fa2; /* Roxo mais escuro */
-            font-size: 20px;
-        }
-
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-            cursor: pointer;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        section {
-            padding: 20px;
-            margin: 0 auto;
-            max-width: 90%;
-        }
-
-        h2, h3 {
-            color: #6a0dad;
-            margin-top: 0;
-            font-family: 'Codec Pro', sans-serif;
-            font-weight: 800;
-            font-size: 28px;
-        }
-
-        .card {
-            background-color: white;
-            border-radius: 10px;
-            padding: 30px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin-bottom: 20px;
-        }
-
-        p, ul, li {
-            font-size: 20px;
-            line-height: 1.6;
-        }
-
-        canvas {
-            max-width: 100%;
-            height: auto;
-            margin-top: 20px;
-        }
-
-        footer {
-            background-color: #6a0dad;
-            color: white;
-            text-align: center;
-            padding: 5px 0;
-            font-size: 12px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-
-        /* Estilos para o menu flutuante */
-        .floating-menu {
-            position: fixed;
-            top: 60px;
-            right: 20px;
-            background-color: white;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            border-radius: 8px;
-            display: none;
-            flex-direction: column;
-            padding: 10px;
-            z-index: 1000;
-        }
-
-        .floating-menu a {
-            color: #6a0dad;
-            text-decoration: none;
-            margin: 5px 0;
-            font-size: 18px;
-        }
-
-        .floating-menu a:hover {
-            text-decoration: underline;
-        }
-
-        .toggle-menu {
-            cursor: pointer;
-            background-color: #7b1fa2; /* Roxo mais escuro */
-            color: white;
-            padding: 10px 15px;
-            border-radius: 5px;
-            margin: 10px;
-            font-weight: bold;
-            border: none;
-            transition: background-color 0.3s;
-        }
-
-        .toggle-menu:hover {
-            background-color: #9c27b0; /* Roxo mais claro */
-        }
-    </style>
-</head>
-<body>
-
-    <header>
-        <h1>Evasão Escolar nas Escolas Públicas e Particulares no Brasil</h1>
-    </header>
-
-    <nav>
-        <a href="#introducao">Introdução</a>
-        <a href="#metodologia">Metodologia</a>
-        <a href="#dados">Evasão Escolar: Dados e Tendências</a>
-        <a href="#motivos">Motivos da Evasão Escolar</a>
-        <a href="#impacto">Impacto da Evasão Escolar</a>
-        <a href="#conclusao">Conclusão</a>
-        <button class="toggle-menu" onclick="toggleMenu()">Artigos</button>
-    </nav>
-
-    <div class="floating-menu" id="floatingMenu">
-        <a href="artigo1.html">Artigo 1: Título do Primeiro Artigo</a>
-        <a href="artigo2.html">Artigo 2: Evasão Escolar nas Escolas</a>
-        <!-- Adicione mais artigos aqui -->
-    </div>
-
-    <section id="introducao">
-        <div class="card">
-            <h2>Introdução</h2>
-            <p>A evasão escolar é um problema significativo no Brasil, afetando tanto escolas públicas quanto particulares. Este artigo analisa os dados do Instituto Brasileiro de Geografia e Estatística (IBGE) e outros institutos para entender os principais motivos da evasão escolar e suas implicações.</p>
-            <p>O fenômeno da evasão escolar não é novo, mas sua gravidade se intensificou nos últimos anos, especialmente durante a pandemia de COVID-19, quando muitas crianças e adolescentes foram afastados da sala de aula. Este artigo busca explorar as complexas causas que levam os alunos a deixar a escola e discutir as consequências sociais e econômicas desse abandono.</p>
-        </div>
-    </section>
-
-    <section id="metodologia">
-        <div class="card">
-            <h2>Metodologia</h2>
-            <p>Os dados utilizados neste artigo foram obtidos de relatórios do IBGE, como a Pesquisa Nacional por Amostra de Domicílios (PNAD) e o Censo Escolar do Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira (Inep). A análise foi feita de forma comparativa, considerando fatores socioeconômicos, regionais e institucionais.</p>
-            <p>Além disso, foram realizadas entrevistas com educadores e gestores escolares para coletar percepções sobre os desafios enfrentados por alunos em risco de evasão, complementando os dados quantitativos com uma perspectiva qualitativa.</p>
-        </div>
-    </section>
-
-    <section id="dados">
-        <div class="card">
-            <h2>Evasão Escolar: Dados e Tendências</h2>
-            <p>De acordo com o IBGE, a evasão escolar no Brasil aumentou significativamente durante a pandemia, com um aumento de 171% no número de crianças e adolescentes fora da escola. Em 2021, cerca de 244 mil crianças de 6 a 14 anos não estavam matriculadas em escolas. Escolas públicas são mais afetadas pela evasão, com um risco de evasão de até 31%.</p>
-            <canvas id="evasaoChart" class="responsive-chart"></canvas>
-            <p>Esses dados alarmantes destacam a necessidade urgente de intervenções para garantir que todos os estudantes tenham acesso à educação de qualidade e sejam apoiados em suas necessidades. O impacto a longo prazo da evasão escolar não se limita apenas ao indivíduo, mas afeta o desenvolvimento social e econômico do país como um todo.</p>
-        </div>
-    </section>
-
-    <section id="motivos">
-        <div class="card">
-            <h2>Motivos da Evasão Escolar</h2>
-            <ul>
-                <li><strong>Condições Socioeconômicas:</strong> Famílias de baixa renda frequentemente enfrentam dificuldades financeiras que impedem a continuidade dos estudos dos filhos.</li>
-                <li><strong>Qualidade da Educação:</strong> A falta de infraestrutura adequada, professores qualificados e materiais didáticos em escolas públicas contribui para a evasão.</li>
-                <li><strong>Distúrbios Emocionais e Psicológicos:</strong> Problemas como ansiedade, depressão e bullying podem levar estudantes a abandonarem a escola.</li>
-                <li><strong>Fatores Regionais:</strong> Áreas rurais e periféricas têm taxas de evasão mais altas devido à falta de acesso a escolas e recursos educacionais.</li>
-                <li><strong>Pandemia de COVID-19:</strong> A transição para o ensino remoto durante a pandemia aumentou a evasão, especialmente entre estudantes que não tinham acesso a tecnologia adequada.</li>
-            </ul>
-            <p>Esses fatores interagem de maneiras complexas e muitas vezes se sobrepõem, exigindo uma abordagem integrada para enfrentá-los e mitigar seus efeitos sobre os estudantes e suas famílias.</p>
-        </div>
-    </section>
-
-    <section id="impacto">
-        <div class="card">
-            <h2>Impacto da Evasão Escolar</h2>
-            <p>A evasão escolar tem impactos negativos profundos, tanto para os indivíduos quanto para a sociedade. Estudantes que abandonam a escola têm maiores chances de enfrentar dificuldades econômicas, menor acesso a oportunidades de emprego e maior vulnerabilidade a problemas sociais.</p>
-            <p>A curto prazo, a evasão pode resultar em um aumento da taxa de criminalidade e em um ciclo vicioso de pobreza. A longo prazo, a sociedade como um todo sofre com a perda de talentos e a diminuição da força de trabalho qualificada, o que pode prejudicar o desenvolvimento econômico e social do país.</p>
-        </div>
-    </section>
-
-    <section id="conclusao">
-        <div class="card">
-            <h2>Conclusão</h2>
-            <p>A evasão escolar é um desafio complexo que requer uma abordagem multifacetada para ser efetivamente combatida. Políticas públicas que abordem as causas socioeconômicas, melhorem a qualidade da educação e ofereçam suporte emocional aos estudantes são essenciais para reduzir a evasão e promover um sistema educacional mais inclusivo e eficaz.</p>
-            <p>É crucial que a sociedade se una para enfrentar essa questão, envolvendo não apenas escolas e governantes, mas também famílias e comunidades na busca por soluções que garantam que todas as crianças tenham acesso a uma educação de qualidade.</p>
-        </div>
-    </section>
-
-    <footer>
-        Feira de Ciências do Colégio Vila 2024
-    </footer>
-
-    <script>
-        // Gráfico na seção de Evasão Escolar usando Chart.js
-        const ctx = document.getElementById('evasaoChart').getContext('2d');
-        const evasaoChart = new Chart(ctx, {
-            type: 'bar',
-            data: {
-                labels: ['Antes da Pandemia', 'Durante a Pandemia'],
-                datasets: [{
-                    label: 'Evasão Escolar (%)',
-                    data: [10, 31], // Exemplo de dados
-                    backgroundColor: [
-                        'rgba(106, 13, 173, 0.6)',
-                        'rgba(156, 39, 176, 0.6)',
-                    ],
-                    borderColor: [
-                        'rgba(106, 13, 173, 1)',
-                        'rgba(156, 39, 176, 1)',
-                    ],
-                    borderWidth: 1
-                }]
-            },
-            options: {
-                scales: {
-                    y: {
-                        beginAtZero: true,
-                        title: {
-                            display: true,
-                            text: 'Evasão Escolar (%)'
-                        }
-                    },
-                    x: {
-                        title: {
-                            display: true,
-                            text: 'Período'
-                        }
-                    }
-                }
-            }
-        });
-
-        function toggleMenu() {
-            const menu = document.getElementById('floatingMenu');
-            menu.style.display = menu.style.display === 'none' || menu.style.display === '' ? 'flex' : 'none';
-        }
     </script>
 
 </body>
